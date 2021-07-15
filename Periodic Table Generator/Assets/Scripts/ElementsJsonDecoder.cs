@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class ElementsJsonDecoder : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Declaring variables to call the Json files
+    public string enterJsonPath = "Json/PeriodicTableJSON";
+    public string exitJsonPath = "Json/PeriodicTableLookup";
+    private Trigger enterTrigger;
+    private Trigger exitTrigger;
+
     void Start()
     {
         
