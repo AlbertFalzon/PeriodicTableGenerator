@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,19 +6,18 @@ using UnityEngine;
 public class ElementsJsonDecoder : MonoBehaviour
 {
     // Declaring variables to call the Json files
-    public string enterJsonPath = "Json/PeriodicTableJSON";
-    public string exitJsonPath = "Json/PeriodicTableLookup";
-    private Trigger enterTrigger;
-    private Trigger exitTrigger;
+    [SerializeField] TextAsset periodicTableJson;
+    public string periodicTableLookup = "Json/PeriodicTableLookup";
+    private ElementsJsonDetails elementsDetail;
+    //private ElementsJsonLookup elementsLookup;
 
     void Start()
     {
+        elementsDetail = JsonUtility.FromJson<ElementsJsonDetails>(periodicTableJson.text);
+        // elementsLookup = JsonUtils.ImportJson<ElementsJsonLookup>(periodicTableLookup);
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        print(elementsDetail);
+        print(periodicTableJson);
+        print(periodicTableJson.text);
     }
 }
