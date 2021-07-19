@@ -1,9 +1,9 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 
 [System.Serializable]
+// Declare the the elements list which then will hold all other elements inside of it as objects
 public class ElementsJsonDetails
 {
     [SerializeField] private Details[] elements;
@@ -14,7 +14,9 @@ public class ElementsJsonDetails
     }
 }
 
+
 [System.Serializable]
+// Declare element object to be stored within the elements list
 public class Details
 {
     [SerializeField] private string name;
@@ -192,8 +194,8 @@ public class Details
         private set { electronegativity_pauling = value; }
     }
 
-    [SerializeField] private List<float> ionization_energies;
-    public List<float> Ionization_Energies
+    [SerializeField] private float[] ionization_energies;
+    public float[] Ionization_Energies
     {
         get { return ionization_energies; }
         private set { ionization_energies = value; }
@@ -205,66 +207,4 @@ public class Details
         get { return cpk_hex; }
         private set { cpk_hex = value; }
     }
-}
-
-
-[System.Serializable]
-public class newJsonDetails
-{
-    public newDetails[] elements;
-}
-
-[System.Serializable]
-public class newDetails
-{
-    public string name;
-    public string appearance;
-    public float atomic_mass;
-
-    public float boil;
-
-    public string category;
-   
-
-    public string color;
-   
-    public float density;
-   
-    public string discovered_by;
-   
-    public float melt;
-   
-    public float molar_heat;
-  
-    public string named_by;
-  
-    public int number;
-    public int period;
-  
-    public string phase;
-    public string source;
-  
-    public string spectral_img;
-  
-    public string summary;
-  
-    public string symbol;
-   
-    public int xpos;
-  
-    public int ypos;
-  
-    public int[] shells;
-  
-    public string electron_configuration;
-  
-    public string electron_configuration_semantic;
-  
-    public float electron_affinity;
- 
-    public float electronegativity_pauling;
-   
-    public List<float> ionization_energies;
- 
-    public string cpk_hex;
 }
