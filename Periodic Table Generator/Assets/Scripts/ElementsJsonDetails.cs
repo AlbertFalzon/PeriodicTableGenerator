@@ -1,18 +1,19 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
-[Serializable]
+[System.Serializable]
 public class ElementsJsonDetails
 {
-    private List<Details> elements;
-    public List<Details> Elements
+    private Details[] elements;
+    public Details[] Elements
     {
         get { return elements; }
         private set { elements = value; }
     }
 }
 
-[Serializable]
+[System.Serializable]
 public class Details
 {
     private string name;
@@ -155,8 +156,8 @@ public class Details
         private set { ypos = value; }
     }
 
-    private List<int> shells;
-    public List<int> Shells
+    private int[] shells;
+    public int[] Shells
     {
         get { return shells; }
         private set { shells = value; }
@@ -203,4 +204,65 @@ public class Details
         get { return cpk_hex; }
         private set { cpk_hex = value; }
     }
+}
+
+[System.Serializable]
+public class newJsonDetails
+{
+    public newDetails[] elements;
+}
+
+[System.Serializable]
+public class newDetails
+{
+    public string name;
+    public string appearance;
+    public float atomic_mass;
+
+    public float boil;
+
+    public string category;
+   
+
+    public string color;
+   
+    public float density;
+   
+    public string discovered_by;
+   
+    public float melt;
+   
+    public float molar_heat;
+  
+    public string named_by;
+  
+    public int number;
+    public int period;
+  
+    public string phase;
+    public string source;
+  
+    public string spectral_img;
+  
+    public string summary;
+  
+    public string symbol;
+   
+    public int xpos;
+  
+    public int ypos;
+  
+    public int[] shells;
+  
+    public string electron_configuration;
+  
+    public string electron_configuration_semantic;
+  
+    public float electron_affinity;
+ 
+    public float electronegativity_pauling;
+   
+    public List<float> ionization_energies;
+ 
+    public string cpk_hex;
 }
