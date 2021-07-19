@@ -10,16 +10,16 @@ public class ElementsJsonDecoder : MonoBehaviour
     // Declaring variables to call the Json files
     [SerializeField] TextAsset periodicTableJson;
     public string periodicTableLookup = "Json/PeriodicTableLookup";
-    public newJsonDetails elementsDetail = new newJsonDetails();
+    public ElementsJsonDetails elementsDetail = new ElementsJsonDetails();
     //private ElementsJsonLookup elementsLookup;
 
     void Start()
     {
-        elementsDetail = JsonUtility.FromJson<newJsonDetails>(periodicTableJson.text);
+        elementsDetail = JsonUtility.FromJson<ElementsJsonDetails>(periodicTableJson.text);
         // elementsLookup = JsonUtils.ImportJson<ElementsJsonLookup>(periodicTableLookup);
         print(elementsDetail);
-        print(elementsDetail.elements);
-        print(elementsDetail.elements[0].name);
+        print(elementsDetail.Elements);
+        print(elementsDetail.Elements[0].Name);
         print(periodicTableJson.text);
     }
 }
