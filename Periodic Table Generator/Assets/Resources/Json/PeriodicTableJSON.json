@@ -19,8 +19,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Hydrogen_Spectra.jpg",
             "summary": "Hydrogen is a chemical element with chemical symbol H and atomic number 1. With an atomic weight of 1.00794 u, hydrogen is the lightest element on the periodic table. Its monatomic form (H) is the most abundant chemical substance in the Universe, constituting roughly 75% of all baryonic mass.",
             "symbol": "H",
-            "xpos": 1,
-            "ypos": 1,
+            "xpos": 0,
+            "ypos": 0,
             "shells": [
                 1
             ],
@@ -55,8 +55,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Helium_spectrum.jpg",
             "summary": "Helium is a chemical element with symbol He and atomic number 2. It is a colorless, odorless, tasteless, non-toxic, inert, monatomic gas that heads the noble gas group in the periodic table. Its boiling and melting points are the lowest among all the elements.",
             "symbol": "He",
-            "xpos": 18,
-            "ypos": 1,
+            "xpos": 0,
+            "ypos": 0,
             "shells": [
                 2
             ],
@@ -92,8 +92,8 @@
             "spectral_img": null,
             "summary": "Lithium (from Greek:λίθος lithos, \"stone\") is a chemical element with the symbol Li and atomic number 3. It is a soft, silver-white metal belonging to the alkali metal group of chemical elements. Under standard conditions it is the lightest metal and the least dense solid element.",
             "symbol": "Li",
-            "xpos": 1,
-            "ypos": 2,
+            "xpos": 0,
+            "ypos": 0,
             "shells": [
                 2,
                 1
@@ -131,8 +131,8 @@
             "spectral_img": null,
             "summary": "Beryllium is a chemical element with symbol Be and atomic number 4. It is created through stellar nucleosynthesis and is a relatively rare element in the universe. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
             "symbol": "Be",
-            "xpos": 2,
-            "ypos": 2,
+            "xpos": 0,
+            "ypos": 0,
             "shells": [
                 2,
                 2
@@ -171,8 +171,8 @@
             "spectral_img": null,
             "summary": "Boron is a metalloid chemical element with symbol B and atomic number 5. Produced entirely by cosmic ray spallation and supernovae and not by stellar nucleosynthesis, it is a low-abundance element in both the Solar system and the Earth's crust. Boron is concentrated on Earth by the water-solubility of its more common naturally occurring compounds, the borate minerals.",
             "symbol": "B",
-            "xpos": 13,
-            "ypos": 2,
+            "xpos": 0,
+            "ypos": 0,
             "shells": [
                 2,
                 3
@@ -212,8 +212,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Carbon_Spectra.jpg",
             "summary": "Carbon (from Latin:carbo \"coal\") is a chemical element with symbol C and atomic number 6. On the periodic table, it is the first (row 2) of six elements in column (group) 14, which have in common the composition of their outer electron shell. It is nonmetallic and tetravalent—making four electrons available to form covalent chemical bonds.",
             "symbol": "C",
-            "xpos": 14,
-            "ypos": 2,
+            "xpos": 1,
+            "ypos": 0,
             "shells": [
                 2,
                 4
@@ -254,8 +254,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Nitrogen_Spectra.jpg",
             "summary": "Nitrogen is a chemical element with symbol N and atomic number 7. It is the lightest pnictogen and at room temperature, it is a transparent, odorless diatomic gas. Nitrogen is a common element in the universe, estimated at about seventh in total abundance in the Milky Way and the Solar System.",
             "symbol": "N",
-            "xpos": 15,
-            "ypos": 2,
+            "xpos": 2,
+            "ypos": 0,
             "shells": [
                 2,
                 5
@@ -297,8 +297,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Oxygen_spectre.jpg",
             "summary": "Oxygen is a chemical element with symbol O and atomic number 8. It is a member of the chalcogen group on the periodic table and is a highly reactive nonmetal and oxidizing agent that readily forms compounds (notably oxides) with most elements. By mass, oxygen is the third-most abundant element in the universe, after hydrogen and helium.",
             "symbol": "O",
-            "xpos": 16,
-            "ypos": 2,
+            "xpos": 0,
+            "ypos": 1,
             "shells": [
                 2,
                 6
@@ -341,8 +341,8 @@
             "spectral_img": null,
             "summary": "Fluorine is a chemical element with symbol F and atomic number 9. It is the lightest halogen and exists as a highly toxic pale yellow diatomic gas at standard conditions. As the most electronegative element, it is extremely reactive:almost all other elements, including some noble gases, form compounds with fluorine.",
             "symbol": "F",
-            "xpos": 17,
-            "ypos": 2,
+            "xpos": 1,
+            "ypos": 1,
             "shells": [
                 2,
                 7
@@ -386,8 +386,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Neon_spectra.jpg",
             "summary": "Neon is a chemical element with symbol Ne and atomic number 10. It is in group 18 (noble gases) of the periodic table. Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about two-thirds the density of air.",
             "symbol": "Ne",
-            "xpos": 18,
-            "ypos": 2,
+            "xpos": 1,
+            "ypos": 0,
             "shells": [
                 2,
                 8
@@ -433,7 +433,7 @@
             "summary": "Sodium /ˈsoʊdiəm/ is a chemical element with symbol Na (from Ancient Greek Νάτριο) and atomic number 11. It is a soft, silver-white, highly reactive metal. In the Periodic table it is in column 1 (alkali metals), and shares with the other six elements in that column that it has a single electron in its outer shell, which it readily donates, creating a positively charged atom - a cation.",
             "symbol": "Na",
             "xpos": 1,
-            "ypos": 3,
+            "ypos": 0,
             "shells": [
                 2,
                 8,
@@ -480,8 +480,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Magnesium_Spectra.jpg",
             "summary": "Magnesium is a chemical element with symbol Mg and atomic number 12. It is a shiny gray solid which bears a close physical resemblance to the other five elements in the second column (Group 2, or alkaline earth metals) of the periodic table:they each have the same electron configuration in their outer electron shell producing a similar crystal structure. Magnesium is the ninth most abundant element in the universe.",
             "symbol": "Mg",
-            "xpos": 2,
-            "ypos": 3,
+            "xpos": 1,
+            "ypos": 0,
             "shells": [
                 2,
                 8,
@@ -529,8 +529,8 @@
             "spectral_img": null,
             "summary": "Aluminium (or aluminum; see different endings) is a chemical element in the boron group with symbol Al and atomic number 13. It is a silvery-white, soft, nonmagnetic, ductile metal. Aluminium is the third most abundant element (after oxygen and silicon), and the most abundant metal, in the Earth's crust.",
             "symbol": "Al",
-            "xpos": 13,
-            "ypos": 3,
+            "xpos": 0,
+            "ypos": 0,
             "shells": [
                 2,
                 8,
@@ -579,8 +579,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Silicon_Spectra.jpg",
             "summary": "Silicon is a chemical element with symbol Si and atomic number 14. It is a tetravalent metalloid, more reactive than germanium, the metalloid directly below it in the table. Controversy about silicon's character dates to its discovery.",
             "symbol": "Si",
-            "xpos": 14,
-            "ypos": 3,
+            "xpos": 1,
+            "ypos": 0,
             "shells": [
                 2,
                 8,
@@ -630,8 +630,8 @@
             "spectral_img": null,
             "summary": "Phosphorus is a chemical element with symbol P and atomic number 15. As an element, phosphorus exists in two major forms—white phosphorus and red phosphorus—but due to its high reactivity, phosphorus is never found as a free element on Earth. Instead phosphorus-containing minerals are almost always present in their maximally oxidised state, as inorganic phosphate rocks.",
             "symbol": "P",
-            "xpos": 15,
-            "ypos": 3,
+            "xpos": 2,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -682,8 +682,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Sulfur_Spectrum.jpg",
             "summary": "Sulfur or sulphur (see spelling differences) is a chemical element with symbol S and atomic number 16. It is an abundant, multivalent non-metal. Under normal conditions, sulfur atoms form cyclic octatomic molecules with chemical formula S8.",
             "symbol": "S",
-            "xpos": 16,
-            "ypos": 3,
+            "xpos": 0,
+            "ypos": 2,
             "shells": [
                 2,
                 8,
@@ -735,8 +735,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Chlorine_spectrum_visible.png",
             "summary": "Chlorine is a chemical element with symbol Cl and atomic number 17. It also has a relative atomic mass of 35.5. Chlorine is in the halogen group (17) and is the second lightest halogen following fluorine.",
             "symbol": "Cl",
-            "xpos": 17,
-            "ypos": 3,
+            "xpos": 1,
+            "ypos": 2,
             "shells": [
                 2,
                 8,
@@ -789,8 +789,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Argon_Spectrum.png",
             "summary": "Argon is a chemical element with symbol Ar and atomic number 18. It is in group 18 of the periodic table and is a noble gas. Argon is the third most common gas in the Earth's atmosphere, at 0.934% (9,340 ppmv), making it over twice as abundant as the next most common atmospheric gas, water vapor (which averages about 4000 ppmv, but varies greatly), and 23 times as abundant as the next most common non-condensing atmospheric gas, carbon dioxide (400 ppmv), and more than 500 times as abundant as the next most common noble gas, neon (18 ppmv).",
             "symbol": "Ar",
-            "xpos": 18,
-            "ypos": 3,
+            "xpos": 2,
+            "ypos": 0,
             "shells": [
                 2,
                 8,
@@ -844,8 +844,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Potassium_Spectrum.jpg",
             "summary": "Potassium is a chemical element with symbol K (derived from Neo-Latin, kalium) and atomic number 19. It was first isolated from potash, the ashes of plants, from which its name is derived. In the Periodic table, potassium is one of seven elements in column (group) 1 (alkali metals):they all have a single valence electron in their outer electron shell, which they readily give up to create an atom with a positive charge - a cation, and combine with anions to form salts.",
             "symbol": "K",
-            "xpos": 1,
-            "ypos": 4,
+            "xpos": 2,
+            "ypos": 0,
             "shells": [
                 2,
                 8,
@@ -902,7 +902,7 @@
             "summary": "Calcium is a chemical element with symbol Ca and atomic number 20. Calcium is a soft gray alkaline earth metal, fifth-most-abundant element by mass in the Earth's crust. The ion Ca2+ is also the fifth-most-abundant dissolved ion in seawater by both molarity and mass, after sodium, chloride, magnesium, and sulfate.",
             "symbol": "Ca",
             "xpos": 2,
-            "ypos": 4,
+            "ypos": 0,
             "shells": [
                 2,
                 8,
@@ -1585,8 +1585,8 @@
             "spectral_img": null,
             "summary": "Gallium is a chemical element with symbol Ga and atomic number 31. Elemental gallium does not occur in free form in nature, but as the gallium(III) compounds that are in trace amounts in zinc ores and in bauxite. Gallium is a soft, silvery metal, and elemental gallium is a brittle solid at low temperatures, and melts at 29.76 °C (85.57 °F) (slightly above room temperature).",
             "symbol": "Ga",
-            "xpos": 13,
-            "ypos": 4,
+            "xpos": 1,
+            "ypos": 0,
             "shells": [
                 2,
                 8,
@@ -1627,8 +1627,8 @@
             "spectral_img": null,
             "summary": "Germanium is a chemical element with symbol Ge and atomic number 32. It is a lustrous, hard, grayish-white metalloid in the carbon group, chemically similar to its group neighbors tin and silicon. Purified germanium is a semiconductor, with an appearance most similar to elemental silicon.",
             "symbol": "Ge",
-            "xpos": 14,
-            "ypos": 4,
+            "xpos": 2,
+            "ypos": 0,
             "shells": [
                 2,
                 8,
@@ -1670,8 +1670,8 @@
             "spectral_img": null,
             "summary": "Arsenic is a chemical element with symbol As and atomic number 33. Arsenic occurs in many minerals, usually in conjunction with sulfur and metals, and also as a pure elemental crystal. Arsenic is a metalloid.",
             "symbol": "As",
-            "xpos": 15,
-            "ypos": 4,
+            "xpos": 0,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -1714,8 +1714,8 @@
             "spectral_img": null,
             "summary": "Selenium is a chemical element with symbol Se and atomic number 34. It is a nonmetal with properties that are intermediate between those of its periodic table column-adjacent chalcogen elements sulfur and tellurium. It rarely occurs in its elemental state in nature, or as pure ore compounds.",
             "symbol": "Se",
-            "xpos": 16,
-            "ypos": 4,
+            "xpos": 2,
+            "ypos": 2,
             "shells": [
                 2,
                 8,
@@ -1759,8 +1759,8 @@
             "spectral_img": null,
             "summary": "Bromine (from Ancient Greek:βρῶμος, brómos, meaning \"stench\") is a chemical element with symbol Br, and atomic number 35. It is a halogen. The element was isolated independently by two chemists, Carl Jacob Löwig and Antoine Jerome Balard, in 1825–1826.",
             "symbol": "Br",
-            "xpos": 17,
-            "ypos": 4,
+            "xpos": 0,
+            "ypos": 3,
             "shells": [
                 2,
                 8,
@@ -1805,8 +1805,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Krypton_Spectrum.jpg",
             "summary": "Krypton (from Greek:κρυπτός kryptos \"the hidden one\") is a chemical element with symbol Kr and atomic number 36. It is a member of group 18 (noble gases) elements. A colorless, odorless, tasteless noble gas, krypton occurs in trace amounts in the atmosphere, is isolated by fractionally distilling liquefied air, and is often used with other rare gases in fluorescent lamps.",
             "symbol": "Kr",
-            "xpos": 18,
-            "ypos": 4,
+            "xpos": 0,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -1873,8 +1873,8 @@
             "spectral_img": null,
             "summary": "Rubidium is a chemical element with symbol Rb and atomic number 37. Rubidium is a soft, silvery-white metallic element of the alkali metal group, with an atomic mass of 85.4678. Elemental rubidium is highly reactive, with properties similar to those of other alkali metals, such as very rapid oxidation in air.",
             "symbol": "Rb",
-            "xpos": 1,
-            "ypos": 5,
+            "xpos": 0,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -1922,8 +1922,8 @@
             "spectral_img": null,
             "summary": "Strontium is a chemical element with symbol Sr and atomic number 38. An alkaline earth metal, strontium is a soft silver-white or yellowish metallic element that is highly reactive chemically. The metal turns yellow when it is exposed to air.",
             "symbol": "Sr",
-            "xpos": 2,
-            "ypos": 5,
+            "xpos": 0,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -2434,8 +2434,8 @@
             "spectral_img": null,
             "summary": "Indium is a chemical element with symbol In and atomic number 49. It is a post-transition metallic element that is rare in Earth's crust. The metal is very soft, malleable and easily fusible, with a melting point higher than sodium, but lower than lithium or tin.",
             "symbol": "In",
-            "xpos": 13,
-            "ypos": 5,
+            "xpos": 2,
+            "ypos": 0,
             "shells": [
                 2,
                 8,
@@ -2477,8 +2477,8 @@
             "spectral_img": null,
             "summary": "Tin is a chemical element with the symbol Sn (for Latin:stannum) and atomic number 50. It is a main group metal in group 14 of the periodic table. Tin shows a chemical similarity to both neighboring group-14 elements, germanium and lead, and has two possible oxidation states, +2 and the slightly more stable +4.",
             "symbol": "Sn",
-            "xpos": 14,
-            "ypos": 5,
+            "xpos": 0,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -2521,8 +2521,8 @@
             "spectral_img": null,
             "summary": "Antimony is a chemical element with symbol Sb (from Latin:stibium) and atomic number 51. A lustrous gray metalloid, it is found in nature mainly as the sulfide mineral stibnite (Sb2S3). Antimony compounds have been known since ancient times and were used for cosmetics; metallic antimony was also known, but it was erroneously identified as lead upon its discovery.",
             "symbol": "Sb",
-            "xpos": 15,
-            "ypos": 5,
+            "xpos": 1,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -2566,8 +2566,8 @@
             "spectral_img": null,
             "summary": "Tellurium is a chemical element with symbol Te and atomic number 52. It is a brittle, mildly toxic, rare, silver-white metalloid. Tellurium is chemically related to selenium and sulfur.",
             "symbol": "Te",
-            "xpos": 16,
-            "ypos": 5,
+            "xpos": 2,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -2612,8 +2612,8 @@
             "spectral_img": null,
             "summary": "Iodine is a chemical element with symbol I and atomic number 53. The name is from Greek ἰοειδής ioeidēs, meaning violet or purple, due to the color of iodine vapor. Iodine and its compounds are primarily used in nutrition, and industrially in the production of acetic acid and certain polymers.",
             "symbol": "I",
-            "xpos": 17,
-            "ypos": 5,
+            "xpos": 1,
+            "ypos": 3,
             "shells": [
                 2,
                 8,
@@ -2654,8 +2654,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Xenon_Spectrum.jpg",
             "summary": "Xenon is a chemical element with symbol Xe and atomic number 54. It is a colorless, dense, odorless noble gas, that occurs in the Earth's atmosphere in trace amounts. Although generally unreactive, xenon can undergo a few chemical reactions such as the formation of xenon hexafluoroplatinate, the first noble gas compound to be synthesized.",
             "symbol": "Xe",
-            "xpos": 18,
-            "ypos": 5,
+            "xpos": 1,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -2697,7 +2697,7 @@
             "summary": "Caesium or cesium is a chemical element with symbol Cs and atomic number 55. It is a soft, silvery-gold alkali metal with a melting point of 28 °C (82 °F), which makes it one of only five elemental metals that are liquid at or near room temperature. Caesium is an alkali metal and has physical and chemical properties similar to those of rubidium and potassium.",
             "symbol": "Cs",
             "xpos": 1,
-            "ypos": 6,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -2739,8 +2739,8 @@
             "spectral_img": null,
             "summary": "Barium is a chemical element with symbol Ba and atomic number 56. It is the fifth element in Group 2, a soft silvery metallic alkaline earth metal. Because of its high chemical reactivity barium is never found in nature as a free element.",
             "symbol": "Ba",
-            "xpos": 2,
-            "ypos": 6,
+            "xpos": 1,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -3830,8 +3830,8 @@
             "spectral_img": null,
             "summary": "Thallium is a chemical element with symbol Tl and atomic number 81. This soft gray post-transition metal is not found free in nature. When isolated, it resembles tin, but discolors when exposed to air.",
             "symbol": "Tl",
-            "xpos": 13,
-            "ypos": 6,
+            "xpos": 1,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -3873,8 +3873,8 @@
             "spectral_img": null,
             "summary": "Lead (/lɛd/) is a chemical element in the carbon group with symbol Pb (from Latin:plumbum) and atomic number 82. Lead is a soft, malleable and heavy post-transition metal. Metallic lead has a bluish-white color after being freshly cut, but it soon tarnishes to a dull grayish color when exposed to air.",
             "symbol": "Pb",
-            "xpos": 14,
-            "ypos": 6,
+            "xpos": 2,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -3918,8 +3918,8 @@
             "spectral_img": null,
             "summary": "Bismuth is a chemical element with symbol Bi and atomic number 83. Bismuth, a pentavalent post-transition metal, chemically resembles arsenic and antimony. Elemental bismuth may occur naturally, although its sulfide and oxide form important commercial ores.",
             "symbol": "Bi",
-            "xpos": 15,
-            "ypos": 6,
+            "xpos": 0,
+            "ypos": 2,
             "shells": [
                 2,
                 8,
@@ -3964,8 +3964,8 @@
             "spectral_img": null,
             "summary": "Polonium is a chemical element with symbol Po and atomic number 84, discovered in 1898 by Marie Curie and Pierre Curie. A rare and highly radioactive element with no stable isotopes, polonium is chemically similar to bismuth and tellurium, and it occurs in uranium ores. Applications of polonium are few.",
             "symbol": "Po",
-            "xpos": 16,
-            "ypos": 6,
+            "xpos": 1,
+            "ypos": 2,
             "shells": [
                 2,
                 8,
@@ -4005,8 +4005,8 @@
             "spectral_img": null,
             "summary": "Astatine is a very rare radioactive chemical element with the chemical symbol At and atomic number 85. It occurs on Earth as the decay product of various heavier elements. All its isotopes are short-lived; the most stable is astatine-210, with a half-life of 8.1 hours.",
             "symbol": "At",
-            "xpos": 17,
-            "ypos": 6,
+            "xpos": 0,
+            "ypos": 2,
             "shells": [
                 2,
                 8,
@@ -4046,8 +4046,8 @@
             "spectral_img": "https://en.wikipedia.org/wiki/File:Radon_spectrum.png",
             "summary": "Radon is a chemical element with symbol Rn and atomic number 86. It is a radioactive, colorless, odorless, tasteless noble gas, occurring naturally as a decay product of radium. Its most stable isotope, 222Rn, has a half-life of 3.8 days.",
             "symbol": "Rn",
-            "xpos": 18,
-            "ypos": 6,
+            "xpos": 2,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -4087,8 +4087,8 @@
             "spectral_img": null,
             "summary": "Francium is a chemical element with symbol Fr and atomic number 87. It used to be known as eka-caesium and actinium K. It is the second-least electronegative element, behind only caesium. Francium is a highly radioactive metal that decays into astatine, radium, and radon.",
             "symbol": "Fr",
-            "xpos": 1,
-            "ypos": 7,
+            "xpos": 2,
+            "ypos": 1,
             "shells": [
                 2,
                 8,
@@ -4130,7 +4130,7 @@
             "summary": "Radium is a chemical element with symbol Ra and atomic number 88. It is the sixth element in group 2 of the periodic table, also known as the alkaline earth metals. Pure radium is almost colorless, but it readily combines with nitrogen (rather than oxygen) on exposure to air, forming a black surface layer of radium nitride (Ra3N2).",
             "symbol": "Ra",
             "xpos": 2,
-            "ypos": 7,
+            "ypos": 1,
             "shells": [
                 2,
                 8,

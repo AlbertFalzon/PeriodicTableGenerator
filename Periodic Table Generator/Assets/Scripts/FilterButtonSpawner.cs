@@ -18,17 +18,23 @@ public class FilterButtonSpawner : MonoBehaviour
         {
             yield return StartCoroutine(SpawnFilterBlock(AllFilters[i]));
         }
+
+        FindObjectOfType<ButtonReader>().InitializeReader();
     }
 
     public IEnumerator SpawnFilterBlock(FilterConfig FilterToSpawn)
     {
-        GameObject NextElement = Instantiate(FilterPrefab, new Vector3(FilterToSpawn.ReturnXpos(), -FilterToSpawn.ReturnYpos(), 0), transform.rotation);
-        NextElement.transform.SetParent(CanvasChild);
-        NextElement.GetComponent<MeshRenderer>().material.SetColor("_Color", FilterToSpawn.ReturnBlockColour());
-        NextElement.transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = FilterToSpawn.ReturnCategoryName();
-        NextElement.GetComponent<FilterButton>().ElementsToFilter = FilterToSpawn;
-        yield return StartCoroutine(FindObjectOfType<ElementsJsonDecoder>().SpawnElement(FilterToSpawn.ReturnElementsList()));
-        NextElement.transform.GetChild(0).transform.GetComponent<Button>().onClick.AddListener(() => { FindObjectOfType<ElementsJsonDecoder>().ButtonPressed(); });
+        GameObject NextFilterBlock = Instantiate(FilterPrefab, new Vector3(FilterToSpawn.ReturnXpos() - 1.5f, (-FilterToSpawn.ReturnYpos()) + 3f, -0.25f), transform.rotation);
+        NextFilterBlock.transform.SetParent(CanvasChild);
+        NextFilterBlock.GetComponent<MeshRenderer>().material.SetColor("_Color", FilterToSpawn.ReturnBlockColour());
+        NextFilterBlock.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = FilterToSpawn.ReturnCategoryName();
+        NextFilterBlock.tag = FilterToSpawn.ReturnTagName();
+        NextFilterBlock.name = FilterToSpawn.ReturnTagName();
         yield return new WaitForFixedUpdate();
+    }
+
+    public List<FilterConfig> ReturnAllFilters()
+    {
+        return AllFilters;
     }
 }

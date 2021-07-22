@@ -15,5 +15,6 @@ MonoBehaviour:
   CategoryName: Metalloids
   ElementsList: 050000000e0000002000000021000000330000003400000055000000
   BlockColour: '#015146'
-  xpos: 0
+  xpos: 4
   ypos: 1.5
+  TagName: Metalloids

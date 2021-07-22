@@ -35,12 +35,13 @@ public class ElementsJsonDecoder : MonoBehaviour
         yield return StartCoroutine(DestroyChildren());
         for(int i = 0; i < ElementIndexList.Length; i++)
         {
-            Details ElementToSpawn = ElementsDetail.Elements[ElementIndexList[i]];
+            Details ElementToSpawn = ElementsDetail.Elements[ElementIndexList[i]-1];
 
             // Spawn object and set the canvas as its parent
-            GameObject NextElement = Instantiate(ElementPrefab, new Vector3(ElementToSpawn.Xpos, -ElementToSpawn.Ypos, 0), transform.rotation);
+            GameObject NextElement = Instantiate(ElementPrefab, new Vector3(ElementToSpawn.Xpos - 1.5f, (-ElementToSpawn.Ypos) + 3f, -0.25f), transform.rotation);
             NextElement.transform.SetParent(CanvasChild);
-
+            NextElement.transform.localScale -= new Vector3(0, 0, 3);
+      
             // Get TMP child of spawned element
             GameObject TextChild = NextElement.transform.GetChild(0).gameObject;
 
@@ -83,13 +84,5 @@ public class ElementsJsonDecoder : MonoBehaviour
         }
 
         yield return new WaitForFixedUpdate();
-    }
-
-    public void ButtonPressed()
-    {
-        GameObject ClickedButton = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
-        int[] SelectedFilter = ClickedButton.transform.parent.GetComponent<FilterButton>().ReturnElementsToFilter().ReturnElementsList();
-
-        StartCoroutine(SpawnElement(SelectedFilter));
     }
 }

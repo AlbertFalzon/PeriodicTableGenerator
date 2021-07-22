@@ -15,5 +15,6 @@ MonoBehaviour:
   CategoryName: Alkali Metals
   ElementsList: 030000000b00000013000000250000003700000057000000
   BlockColour: '#6c3b01'
-  xpos: 0
+  xpos: 4
   ypos: 0
+  TagName: AlkaliMetals

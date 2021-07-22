@@ -11,6 +11,7 @@ public class FilterConfig : ScriptableObject
     [SerializeField] string BlockColour;
     [SerializeField] float xpos;
     [SerializeField] float ypos;
+    [SerializeField] string TagName;
 
     public int[] ReturnElementsList()
     {
@@ -42,5 +43,10 @@ public class FilterConfig : ScriptableObject
     public float ReturnYpos()
     {
         return ypos;
+    }
+
+    public string ReturnTagName()
+    {
+        return TagName;
     }
 }
