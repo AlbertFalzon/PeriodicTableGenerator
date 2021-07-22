@@ -20,7 +20,7 @@ public class ElementsJsonDecoder : MonoBehaviour
     // Frequently Referred Objects
     Transform CanvasChild;
 
-    IEnumerator Start()
+    public void Start()
     {
         // Initialise CanvasChild
         CanvasChild = transform.GetChild(0);
@@ -28,51 +28,41 @@ public class ElementsJsonDecoder : MonoBehaviour
         ElementsDetail = JsonUtility.FromJson<ElementsJsonDetails>(PeriodicTableJson.text);
         // elementsLookup = JsonUtils.ImportJson<ElementsJsonLookup>(periodicTableLookup);
 
-        // Generate blocks
-        for(int i = 0; i < ElementsDetail.Elements.Length; i++)
-        {
-            // print("Block Name: " + ElementsDetail.Elements[i].Name + "\nXpos: " + ElementsDetail.Elements[i].Xpos + "\nYpos: " + ElementsDetail.Elements[i].Ypos);
-            yield return StartCoroutine(CheckElement(i));
-        }
-
+    }
+    
+    public IEnumerator SpawnElement(int[] ElementIndexList)
+    {
         yield return StartCoroutine(DestroyChildren());
-    }
-    
-    public IEnumerator CheckElement(int index)
-    {
-        Details ElementToCheck = ElementsDetail.Elements[index];
+        for(int i = 0; i < ElementIndexList.Length; i++)
+        {
+            Details ElementToSpawn = ElementsDetail.Elements[ElementIndexList[i]];
 
-        if(ElementToCheck.Category == CurrentCategory)
-        {
-            print("Spawning Element: " + ElementToCheck.Name);
-            yield return StartCoroutine(SpawnElement(ElementToCheck));
-        } else
-        {
-            print("Skipped Element: " + ElementToCheck.Name);
-            yield return new WaitForFixedUpdate();
+            // Spawn object and set the canvas as its parent
+            GameObject NextElement = Instantiate(ElementPrefab, new Vector3(ElementToSpawn.Xpos, -ElementToSpawn.Ypos, 0), transform.rotation);
+            NextElement.transform.SetParent(CanvasChild);
+
+            // Get TMP child of spawned element
+            GameObject TextChild = NextElement.transform.GetChild(0).gameObject;
+
+            // Set text in a string and assign it
+            string NewText = "<align=\"right\"><size=18>" + ElementToSpawn.Number + "</size></align>\n<size=40>" + ElementToSpawn.Symbol + "</size>\n<size=14>" + ElementToSpawn.Name + "\n" + ElementToSpawn.Atomic_Mass + "</size>";
+            TextChild.GetComponent<TextMeshProUGUI>().text = NewText;
+            Color NewColor;
+
+            // Use Cpk_Hex to colour the text
+            if (ColorUtility.TryParseHtmlString("#" + ElementToSpawn.Cpk_Hex[0], out NewColor))
+            {
+                TextChild.GetComponent<TextMeshProUGUI>().color = NewColor;
+            }
+
+            // Use Cpk_Hex to colour the material
+            if (ColorUtility.TryParseHtmlString("#" + ElementToSpawn.Cpk_Hex[1], out NewColor))
+            {
+               NextElement.GetComponent<MeshRenderer>().material.SetColor("_Color", NewColor);
+            }
+
         }
-    }
-    
-    public IEnumerator SpawnElement(Details ElementToSpawn)
-    {
-        // Spawn object and set the canvas as its parent
-        GameObject NextElement = Instantiate(ElementPrefab, new Vector3(ElementToSpawn.Xpos, -ElementToSpawn.Ypos, 0), transform.rotation);
-        NextElement.transform.SetParent(CanvasChild);
-
-        // Get TMP child of spawned element
-        GameObject TextChild = NextElement.transform.GetChild(0).gameObject;
-
-        // Set text in a string and assign it
-        string NewText = "<align=\"right\"><size=18>" + ElementToSpawn.Number + "</size></align>\n<size=40>" + ElementToSpawn.Symbol + "</size>\n<size=14>" + ElementToSpawn.Name + "\n" + ElementToSpawn.Atomic_Mass + "</size>";
-        TextChild.GetComponent<TextMeshProUGUI>().text = NewText;
-        Color NewColor;
-
-        if (ColorUtility.TryParseHtmlString("#" + ElementToSpawn.Cpk_Hex, out NewColor))
-        {
-            NextElement.GetComponent<MeshRenderer>().material.SetColor("_Color", NewColor);
-        }
-       
-
+ 
         yield return new WaitForFixedUpdate();
     }
 
@@ -93,5 +83,13 @@ public class ElementsJsonDecoder : MonoBehaviour
         }
 
         yield return new WaitForFixedUpdate();
+    }
+
+    public void ButtonPressed()
+    {
+        GameObject ClickedButton = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
+        int[] SelectedFilter = ClickedButton.transform.parent.GetComponent<FilterButton>().ReturnElementsToFilter().ReturnElementsList();
+
+        StartCoroutine(SpawnElement(SelectedFilter));
     }
 }

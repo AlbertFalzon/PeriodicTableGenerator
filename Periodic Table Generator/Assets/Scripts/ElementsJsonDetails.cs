@@ -201,8 +201,8 @@ public class Details
         private set { ionization_energies = value; }
     }
 
-    [SerializeField] private string cpk_hex;
-    public string Cpk_Hex
+    [SerializeField] private string[] cpk_hex;
+    public string[] Cpk_Hex
     {
         get { return cpk_hex; }
         private set { cpk_hex = value; }

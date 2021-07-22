@@ -5,7 +5,7 @@
             "appearance": "colorless gas",
             "atomic_mass": 1.008,
             "boil": 20.271,
-            "category": "diatomic nonmetal",
+            "category": "reactive nonmetal",
             "color": null,
             "density": 0.08988,
             "discovered_by": "Henry Cavendish",
@@ -31,7 +31,10 @@
             "ionization_energies": [
                 1312
             ],
-            "cpk_hex": "ffffff"
+            "cpk_hex": [
+                "e53f3f",
+                "3e6418"
+            ]
         },
         {
             "name": "Helium",
@@ -65,7 +68,10 @@
                 2372.3,
                 5250.5
             ],
-            "cpk_hex": "d9ffff"
+            "cpk_hex": [
+                "e53f3f",
+                "3a2151"
+            ]
         },
         {
             "name": "Lithium",
@@ -101,7 +107,10 @@
                 7298.1,
                 11815
             ],
-            "cpk_hex": "cc80ff"
+            "cpk_hex": [
+                "b5b5b5",
+                "6c3b01"
+            ]
         },
         {
             "name": "Beryllium",
@@ -138,7 +147,10 @@
                 14848.7,
                 21006.6
             ],
-            "cpk_hex": "c2ff00"
+            "cpk_hex": [
+                "b5b5b5",
+                "846011"
+            ]
         },
         {
             "name": "Boron",
@@ -176,14 +188,17 @@
                 25025.8,
                 32826.7
             ],
-            "cpk_hex": "ffb5b5"
+            "cpk_hex": [
+                "b5b5b5",
+                "015146"
+            ]
         },
         {
             "name": "Carbon",
             "appearance": null,
             "atomic_mass": 12.011,
             "boil": null,
-            "category": "polyatomic nonmetal",
+            "category": "reactive nonmetal",
             "color": null,
             "density": 1.821,
             "discovered_by": "Ancient Egypt",
@@ -215,14 +230,17 @@
                 37831,
                 47277
             ],
-            "cpk_hex": "909090"
+            "cpk_hex": [
+                "b5b5b5",
+                "3e6418"
+            ]
         },
         {
             "name": "Nitrogen",
             "appearance": "colorless gas, liquid or solid",
             "atomic_mass": 14.007,
             "boil": 77.355,
-            "category": "diatomic nonmetal",
+            "category": "reactive nonmetal",
             "color": null,
             "density": 1.251,
             "discovered_by": "Daniel Rutherford",
@@ -255,14 +273,17 @@
                 53266.6,
                 64360
             ],
-            "cpk_hex": "3050f8"
+            "cpk_hex": [
+                "e53f3f",
+                "3e6418"
+            ]
         },
         {
             "name": "Oxygen",
             "appearance": null,
             "atomic_mass": 15.999,
             "boil": 90.188,
-            "category": "diatomic nonmetal",
+            "category": "reactive nonmetal",
             "color": null,
             "density": 1.429,
             "discovered_by": "Carl Wilhelm Scheele",
@@ -296,14 +317,17 @@
                 71330,
                 84078
             ],
-            "cpk_hex": "ff0d0d"
+            "cpk_hex": [
+                "e53f3f",
+                "3e6418"
+            ]
         },
         {
             "name": "Fluorine",
             "appearance": null,
             "atomic_mass": 18.9984031636,
             "boil": 85.03,
-            "category": "diatomic nonmetal",
+            "category": "reactive nonmetal",
             "color": null,
             "density": 1.696,
             "discovered_by": "André-Marie Ampère",
@@ -338,7 +362,10 @@
                 92038.1,
                 106434.3
             ],
-            "cpk_hex": "90e050"
+            "cpk_hex": [
+                "e53f3f",
+                "3e6418"
+            ]
         },
         {
             "name": "Neon",
@@ -381,7 +408,10 @@
                 115379.5,
                 131432
             ],
-            "cpk_hex": "b3e3f5"
+            "cpk_hex": [
+                "e53f3f",
+                "3a2151"
+            ]
         },
         {
             "name": "Sodium",
@@ -426,7 +456,10 @@
                 141362,
                 159076
             ],
-            "cpk_hex": "ab5cf2"
+            "cpk_hex": [
+                "b5b5b5",
+                "6c3b01"
+            ]
         },
         {
             "name": "Magnesium",
@@ -472,7 +505,10 @@
                 169988,
                 189368
             ],
-            "cpk_hex": "8aff00"
+            "cpk_hex": [
+                "b5b5b5",
+                "846011"
+            ]
         },
         {
             "name": "Aluminium",
@@ -519,7 +555,10 @@
                 201266,
                 222316
             ],
-            "cpk_hex": "bfa6a6"
+            "cpk_hex": [
+                "b5b5b5",
+                "003666"
+            ]
         },
         {
             "name": "Silicon",
@@ -567,14 +606,17 @@
                 235196,
                 257923
             ],
-            "cpk_hex": "f0c8a0"
+            "cpk_hex": [
+                "b5b5b5",
+                "015146"
+            ]
         },
         {
             "name": "Phosphorus",
             "appearance": "colourless, waxy white, yellow, scarlet, red, violet, black",
             "atomic_mass": 30.9737619985,
             "boil": null,
-            "category": "polyatomic nonmetal",
+            "category": "reactive nonmetal",
             "color": null,
             "density": 1.823,
             "discovered_by": "Hennig Brand",
@@ -616,14 +658,17 @@
                 271791,
                 296195
             ],
-            "cpk_hex": "ff8000"
+            "cpk_hex": [
+                "b5b5b5",
+                "3e6418"
+            ]
         },
         {
             "name": "Sulfur",
             "appearance": "lemon yellow sintered microcrystals",
             "atomic_mass": 32.06,
             "boil": 717.8,
-            "category": "polyatomic nonmetal",
+            "category": "reactive nonmetal",
             "color": null,
             "density": 2.07,
             "discovered_by": "Ancient china",
@@ -666,14 +711,17 @@
                 311048,
                 337138
             ],
-            "cpk_hex": "ffff30"
+            "cpk_hex": [
+                "b5b5b5",
+                "3e6418"
+            ]
         },
         {
             "name": "Chlorine",
             "appearance": "pale yellow-green gas",
             "atomic_mass": 35.45,
             "boil": 239.11,
-            "category": "diatomic nonmetal",
+            "category": "reactive nonmetal",
             "color": null,
             "density": 3.2,
             "discovered_by": "Carl Wilhelm Scheele",
@@ -717,7 +765,10 @@
                 352994,
                 380760
             ],
-            "cpk_hex": "1ff01f"
+            "cpk_hex": [
+                "e53f3f",
+                "3e6418"
+            ]
         },
         {
             "name": "Argon",
@@ -769,7 +820,10 @@
                 397605,
                 427066
             ],
-            "cpk_hex": "80d1e3"
+            "cpk_hex": [
+                "e53f3f",
+                "3a2151"
+            ]
         },
         {
             "name": "Potassium",
@@ -823,7 +877,10 @@
                 444880,
                 476063
             ],
-            "cpk_hex": "8f40d4"
+            "cpk_hex": [
+                "b5b5b5",
+                "6c3b01"
+            ]
         },
         {
             "name": "Calcium",
@@ -878,7 +935,10 @@
                 494850,
                 527762
             ],
-            "cpk_hex": "3dff00"
+            "cpk_hex": [
+                "b5b5b5",
+                "846011"
+            ]
         },
         {
             "name": "Scandium",
@@ -934,7 +994,10 @@
                 547530,
                 582163
             ],
-            "cpk_hex": "e6e6e6"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Titanium",
@@ -991,7 +1054,10 @@
                 602930,
                 639294
             ],
-            "cpk_hex": "bfc2c7"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Vanadium",
@@ -1049,7 +1115,10 @@
                 661050,
                 699144
             ],
-            "cpk_hex": "a6a6ab"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Chromium",
@@ -1108,7 +1177,10 @@
                 721870,
                 761733
             ],
-            "cpk_hex": "8a99c7"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Manganese",
@@ -1168,7 +1240,10 @@
                 785450,
                 827067
             ],
-            "cpk_hex": "9c7ac7"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Iron",
@@ -1229,7 +1304,10 @@
                 851800,
                 895161
             ],
-            "cpk_hex": "e06633"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Cobalt",
@@ -1291,7 +1369,10 @@
                 920870,
                 966023
             ],
-            "cpk_hex": "f090a0"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Nickel",
@@ -1354,7 +1435,10 @@
                 992718,
                 1039668
             ],
-            "cpk_hex": "50d050"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Copper",
@@ -1418,7 +1502,10 @@
                 1067358,
                 1116105
             ],
-            "cpk_hex": "c88033"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Zinc",
@@ -1474,7 +1561,10 @@
                 71200,
                 179100
             ],
-            "cpk_hex": "7d80b0"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Gallium",
@@ -1513,7 +1603,10 @@
                 2963,
                 6180
             ],
-            "cpk_hex": "c28f8f"
+            "cpk_hex": [
+                "b5b5b5",
+                "003666"
+            ]
         },
         {
             "name": "Germanium",
@@ -1553,7 +1646,10 @@
                 4411,
                 9020
             ],
-            "cpk_hex": "668f8f"
+            "cpk_hex": [
+                "b5b5b5",
+                "015146"
+            ]
         },
         {
             "name": "Arsenic",
@@ -1594,14 +1690,17 @@
                 6043,
                 12310
             ],
-            "cpk_hex": "bd80e3"
+            "cpk_hex": [
+                "b5b5b5",
+                "015146"
+            ]
         },
         {
             "name": "Selenium",
             "appearance": "black, red, and gray (not pictured) allotropes",
             "atomic_mass": 78.9718,
             "boil": 958,
-            "category": "polyatomic nonmetal",
+            "category": "reactive nonmetal",
             "color": null,
             "density": 4.81,
             "discovered_by": "Jöns Jakob Berzelius",
@@ -1636,14 +1735,17 @@
                 7880,
                 14990
             ],
-            "cpk_hex": "ffa100"
+            "cpk_hex": [
+                "b5b5b5",
+                "3e6418"
+            ]
         },
         {
             "name": "Bromine",
             "appearance": null,
             "atomic_mass": 79.904,
             "boil": 332,
-            "category": "diatomic nonmetal",
+            "category": "reactive nonmetal",
             "color": null,
             "density": 3.1028,
             "discovered_by": "Antoine Jérôme Balard",
@@ -1679,7 +1781,10 @@
                 9940,
                 18600
             ],
-            "cpk_hex": "a62929"
+            "cpk_hex": [
+                "9999ff",
+                "3e6418"
+            ]
         },
         {
             "name": "Krypton",
@@ -1744,7 +1849,10 @@
                 311400,
                 326200
             ],
-            "cpk_hex": "5cb8d1"
+            "cpk_hex": [
+                "e53f3f",
+                "3a2151"
+            ]
         },
         {
             "name": "Rubidium",
@@ -1790,7 +1898,10 @@
                 14500,
                 26740
             ],
-            "cpk_hex": "702eb0"
+            "cpk_hex": [
+                "b5b5b5",
+                "6c3b01"
+            ]
         },
         {
             "name": "Strontium",
@@ -1837,7 +1948,10 @@
                 17100,
                 31270
             ],
-            "cpk_hex": "00ff00"
+            "cpk_hex": [
+                "b5b5b5",
+                "846011"
+            ]
         },
         {
             "name": "Yttrium",
@@ -1885,7 +1999,10 @@
                 19900,
                 36090
             ],
-            "cpk_hex": "94ffff"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Zirconium",
@@ -1927,7 +2044,10 @@
                 7752,
                 9500
             ],
-            "cpk_hex": "94e0e0"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Niobium",
@@ -1970,7 +2090,10 @@
                 9847,
                 12100
             ],
-            "cpk_hex": "73c2c9"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Molybdenum",
@@ -2036,7 +2159,10 @@
                 148100,
                 154500
             ],
-            "cpk_hex": "54b5b5"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Technetium",
@@ -2075,7 +2201,10 @@
                 1470,
                 2850
             ],
-            "cpk_hex": "3b9e9e"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Ruthenium",
@@ -2114,7 +2243,10 @@
                 1620,
                 2747
             ],
-            "cpk_hex": "248f8f"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Rhodium",
@@ -2153,7 +2285,10 @@
                 1740,
                 2997
             ],
-            "cpk_hex": "0a7d8c"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Palladium",
@@ -2191,7 +2326,10 @@
                 1870,
                 3177
             ],
-            "cpk_hex": "006985"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Silver",
@@ -2230,7 +2368,10 @@
                 2070,
                 3361
             ],
-            "cpk_hex": "c0c0c0"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Cadmium",
@@ -2269,7 +2410,10 @@
                 1631.4,
                 3616
             ],
-            "cpk_hex": "ffd98f"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Indium",
@@ -2309,7 +2453,10 @@
                 2704,
                 5210
             ],
-            "cpk_hex": "a67573"
+            "cpk_hex": [
+                "b5b5b5",
+                "003666"
+            ]
         },
         {
             "name": "Tin",
@@ -2350,7 +2497,10 @@
                 3930.3,
                 7456
             ],
-            "cpk_hex": "668080"
+            "cpk_hex": [
+                "b5b5b5",
+                "003666"
+            ]
         },
         {
             "name": "Antimony",
@@ -2392,7 +2542,10 @@
                 5400,
                 10400
             ],
-            "cpk_hex": "9e63b5"
+            "cpk_hex": [
+                "b5b5b5",
+                "015146"
+            ]
         },
         {
             "name": "Tellurium",
@@ -2435,14 +2588,17 @@
                 6820,
                 13200
             ],
-            "cpk_hex": "d47a00"
+            "cpk_hex": [
+                "b5b5b5",
+                "015146"
+            ]
         },
         {
             "name": "Iodine",
             "appearance": "lustrous metallic gray, violet as a gas",
             "atomic_mass": 126.904473,
             "boil": 457.4,
-            "category": "diatomic nonmetal",
+            "category": "reactive nonmetal",
             "color": null,
             "density": 4.933,
             "discovered_by": "Bernard Courtois",
@@ -2474,7 +2630,10 @@
                 1845.9,
                 3180
             ],
-            "cpk_hex": "940094"
+            "cpk_hex": [
+                "b5b5b5",
+                "3e6418"
+            ]
         },
         {
             "name": "Xenon",
@@ -2513,7 +2672,10 @@
                 2046.4,
                 3099.4
             ],
-            "cpk_hex": "429eb0"
+            "cpk_hex": [
+                "e53f3f",
+                "3a2151"
+            ]
         },
         {
             "name": "Cesium",
@@ -2553,7 +2715,10 @@
                 2234.3,
                 3400
             ],
-            "cpk_hex": "57178f"
+            "cpk_hex": [
+                "b5b5b5",
+                "6c3b01"
+            ]
         },
         {
             "name": "Barium",
@@ -2593,7 +2758,10 @@
                 965.2,
                 3600
             ],
-            "cpk_hex": "00c900"
+            "cpk_hex": [
+                "b5b5b5",
+                "846011"
+            ]
         },
         {
             "name": "Lanthanum",
@@ -2635,7 +2803,10 @@
                 4819,
                 5940
             ],
-            "cpk_hex": "70d4ff"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Cerium",
@@ -2678,7 +2849,10 @@
                 6325,
                 7490
             ],
-            "cpk_hex": "ffffc7"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Praseodymium",
@@ -2720,7 +2894,10 @@
                 3761,
                 5551
             ],
-            "cpk_hex": "d9ffc7"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Neodymium",
@@ -2761,7 +2938,10 @@
                 2130,
                 3900
             ],
-            "cpk_hex": "c7ffc7"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Promethium",
@@ -2802,7 +2982,10 @@
                 2150,
                 3970
             ],
-            "cpk_hex": "a3ffc7"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Samarium",
@@ -2843,7 +3026,10 @@
                 2260,
                 3990
             ],
-            "cpk_hex": "8fffc7"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Europium",
@@ -2884,7 +3070,10 @@
                 2404,
                 4120
             ],
-            "cpk_hex": "61ffc7"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Gadolinium",
@@ -2925,7 +3114,10 @@
                 1990,
                 4250
             ],
-            "cpk_hex": "45ffc7"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Terbium",
@@ -2966,7 +3158,10 @@
                 2114,
                 3839
             ],
-            "cpk_hex": "30ffc7"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Dysprosium",
@@ -3007,7 +3202,10 @@
                 2200,
                 3990
             ],
-            "cpk_hex": "1fffc7"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Holmium",
@@ -3048,7 +3246,10 @@
                 2204,
                 4100
             ],
-            "cpk_hex": "00ff9c"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Erbium",
@@ -3089,7 +3290,10 @@
                 2194,
                 4120
             ],
-            "cpk_hex": "00e675"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Thulium",
@@ -3130,7 +3334,10 @@
                 2285,
                 4120
             ],
-            "cpk_hex": "00d452"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Ytterbium",
@@ -3171,7 +3378,10 @@
                 2417,
                 4203
             ],
-            "cpk_hex": "00bf38"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Lutetium",
@@ -3213,7 +3423,10 @@
                 4370,
                 6445
             ],
-            "cpk_hex": "00ab24"
+            "cpk_hex": [
+                "b5b5b5",
+                "402c17"
+            ]
         },
         {
             "name": "Hafnium",
@@ -3254,7 +3467,10 @@
                 2250,
                 3216
             ],
-            "cpk_hex": "4dc2ff"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Tantalum",
@@ -3293,7 +3509,10 @@
                 761,
                 1500
             ],
-            "cpk_hex": "4da6ff"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Tungsten",
@@ -3332,7 +3551,10 @@
                 770,
                 1700
             ],
-            "cpk_hex": "2194d6"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Rhenium",
@@ -3373,7 +3595,10 @@
                 2510,
                 3640
             ],
-            "cpk_hex": "267dab"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Osmium",
@@ -3412,7 +3637,10 @@
                 840,
                 1600
             ],
-            "cpk_hex": "266696"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Iridium",
@@ -3451,7 +3679,10 @@
                 880,
                 1600
             ],
-            "cpk_hex": "175487"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Platinum",
@@ -3490,7 +3721,10 @@
                 870,
                 1791
             ],
-            "cpk_hex": "d0d0e0"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Gold",
@@ -3529,7 +3763,10 @@
                 890.1,
                 1980
             ],
-            "cpk_hex": "ffd123"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Mercury",
@@ -3569,7 +3806,10 @@
                 1810,
                 3300
             ],
-            "cpk_hex": "b8b8d0"
+            "cpk_hex": [
+                "9999ff",
+                "711019"
+            ]
         },
         {
             "name": "Thallium",
@@ -3609,7 +3849,10 @@
                 1971,
                 2878
             ],
-            "cpk_hex": "a6544d"
+            "cpk_hex": [
+                "b5b5b5",
+                "003666"
+            ]
         },
         {
             "name": "Lead",
@@ -3651,7 +3894,10 @@
                 4083,
                 6640
             ],
-            "cpk_hex": "575961"
+            "cpk_hex": [
+                "b5b5b5",
+                "003666"
+            ]
         },
         {
             "name": "Bismuth",
@@ -3694,7 +3940,10 @@
                 5400,
                 8520
             ],
-            "cpk_hex": "9e4fb5"
+            "cpk_hex": [
+                "b5b5b5",
+                "003666"
+            ]
         },
         {
             "name": "Polonium",
@@ -3732,7 +3981,10 @@
             "ionization_energies": [
                 812.1
             ],
-            "cpk_hex": "ab5c00"
+            "cpk_hex": [
+                "b5b5b5",
+                "003666"
+            ]
         },
         {
             "name": "Astatine",
@@ -3770,7 +4022,10 @@
             "ionization_energies": [
                 899.003
             ],
-            "cpk_hex": "754f45"
+            "cpk_hex": [
+                "b5b5b5",
+                "015146"
+            ]
         },
         {
             "name": "Radon",
@@ -3808,7 +4063,10 @@
             "ionization_energies": [
                 1037
             ],
-            "cpk_hex": "428296"
+            "cpk_hex": [
+                "e53f3f",
+                "3a2151"
+            ]
         },
         {
             "name": "Francium",
@@ -3847,7 +4105,10 @@
             "ionization_energies": [
                 380
             ],
-            "cpk_hex": "420066"
+            "cpk_hex": [
+                "b5b5b5",
+                "6c3b01"
+            ]
         },
         {
             "name": "Radium",
@@ -3887,7 +4148,10 @@
                 509.3,
                 979
             ],
-            "cpk_hex": "007d00"
+            "cpk_hex": [
+                "b5b5b5",
+                "846011"
+            ]
         },
         {
             "name": "Actinium",
@@ -3927,7 +4191,10 @@
                 499,
                 1170
             ],
-            "cpk_hex": "70abfa"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Thorium",
@@ -3969,7 +4236,10 @@
                 1930,
                 2780
             ],
-            "cpk_hex": "00baff"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Protactinium",
@@ -4008,7 +4278,10 @@
             "ionization_energies": [
                 568
             ],
-            "cpk_hex": "00a1ff"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Uranium",
@@ -4048,7 +4321,10 @@
                 597.6,
                 1420
             ],
-            "cpk_hex": "008fff"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Neptunium",
@@ -4087,7 +4363,10 @@
             "ionization_energies": [
                 604.5
             ],
-            "cpk_hex": "0080ff"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Plutonium",
@@ -4126,7 +4405,10 @@
             "ionization_energies": [
                 584.7
             ],
-            "cpk_hex": "006bff"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Americium",
@@ -4165,7 +4447,10 @@
             "ionization_energies": [
                 578
             ],
-            "cpk_hex": "545cf2"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Curium",
@@ -4204,7 +4489,10 @@
             "ionization_energies": [
                 581
             ],
-            "cpk_hex": "785ce3"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Berkelium",
@@ -4243,7 +4531,10 @@
             "ionization_energies": [
                 601
             ],
-            "cpk_hex": "8a4fe3"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Californium",
@@ -4282,7 +4573,10 @@
             "ionization_energies": [
                 608
             ],
-            "cpk_hex": "a136d4"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Einsteinium",
@@ -4321,7 +4615,10 @@
             "ionization_energies": [
                 619
             ],
-            "cpk_hex": "b31fd4"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Fermium",
@@ -4360,7 +4657,10 @@
             "ionization_energies": [
                 627
             ],
-            "cpk_hex": "b31fba"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Mendelevium",
@@ -4399,7 +4699,10 @@
             "ionization_energies": [
                 635
             ],
-            "cpk_hex": "b30da6"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Nobelium",
@@ -4438,7 +4741,10 @@
             "ionization_energies": [
                 642
             ],
-            "cpk_hex": "bd0d87"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Lawrencium",
@@ -4477,7 +4783,10 @@
             "ionization_energies": [
                 470
             ],
-            "cpk_hex": "c70066"
+            "cpk_hex": [
+                "b5b5b5",
+                "732e4c"
+            ]
         },
         {
             "name": "Rutherfordium",
@@ -4516,7 +4825,10 @@
             "ionization_energies": [
                 580
             ],
-            "cpk_hex": "cc0059"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Dubnium",
@@ -4553,7 +4865,10 @@
             "electron_affinity": null,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": "d1004f"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Seaborgium",
@@ -4590,7 +4905,10 @@
             "electron_affinity": null,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": "d90045"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Bohrium",
@@ -4627,7 +4945,10 @@
             "electron_affinity": null,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": "e00038"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Hassium",
@@ -4664,7 +4985,10 @@
             "electron_affinity": null,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": "e6002e"
+            "cpk_hex": [
+                "b5b5b5",
+                "711019"
+            ]
         },
         {
             "name": "Meitnerium",
@@ -4701,7 +5025,10 @@
             "electron_affinity": null,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": "eb0026"
+            "cpk_hex": [
+                "b5b5b5",
+                "4e4e4e"
+            ]
         },
         {
             "name": "Darmstadtium",
@@ -4738,7 +5065,10 @@
             "electron_affinity": null,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": null
+            "cpk_hex": [
+                "b5b5b5",
+                "4e4e4e"
+            ]
         },
         {
             "name": "Roentgenium",
@@ -4775,7 +5105,10 @@
             "electron_affinity": 151,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": null
+            "cpk_hex": [
+                "b5b5b5",
+                "4e4e4e"
+            ]
         },
         {
             "name": "Copernicium",
@@ -4812,7 +5145,10 @@
             "electron_affinity": null,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": null
+            "cpk_hex": [
+                "e53f3f",
+                "711019"
+            ]
         },
         {
             "name": "Nihonium",
@@ -4849,14 +5185,17 @@
             "electron_affinity": 66.6,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": null
+            "cpk_hex": [
+                "b5b5b5",
+                "4e4e4e"
+            ]
         },
         {
             "name": "Flerovium",
             "appearance": null,
             "atomic_mass": 289,
             "boil": 420,
-            "category": "post-transition metal",
+            "category": "unkown, probably post-transition metal",
             "color": null,
             "density": 14,
             "discovered_by": "Joint Institute for Nuclear Research",
@@ -4886,7 +5225,10 @@
             "electron_affinity": null,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": null
+            "cpk_hex": [
+                "b5b5b5",
+                "003666"
+            ]
         },
         {
             "name": "Moscovium",
@@ -4923,7 +5265,10 @@
             "electron_affinity": 35.3,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": null
+            "cpk_hex": [
+                "b5b5b5",
+                "4e4e4e"
+            ]
         },
         {
             "name": "Livermorium",
@@ -4960,7 +5305,10 @@
             "electron_affinity": 74.9,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": null
+            "cpk_hex": [
+                "b5b5b5",
+                "4e4e4e"
+            ]
         },
         {
             "name": "Tennessine",
@@ -4997,7 +5345,10 @@
             "electron_affinity": 165.9,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": null
+            "cpk_hex": [
+                "b5b5b5",
+                "4e4e4e"
+            ]
         },
         {
             "name": "Oganesson",
@@ -5034,7 +5385,10 @@
             "electron_affinity": 5.40318,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": null
+            "cpk_hex": [
+                "b5b5b5",
+                "4e4e4e"
+            ]
         },
         {
             "name": "Ununennium",
@@ -5072,7 +5426,10 @@
             "electron_affinity": 63.87,
             "electronegativity_pauling": null,
             "ionization_energies": [],
-            "cpk_hex": null
+            "cpk_hex": [
+                "b5b5b5",
+                "4e4e4e"
+            ]
         }
     ]
 }
