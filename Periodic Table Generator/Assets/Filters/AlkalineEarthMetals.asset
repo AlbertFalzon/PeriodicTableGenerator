@@ -13,8 +13,22 @@ MonoBehaviour:
   m_Name: AlkalineEarthMetals
   m_EditorClassIdentifier: 
   CategoryName: Alkaline Earth Metals
-  ElementsList: 040000000c00000014000000260000003800000058000000
   BlockColour: '#846011'
   xpos: 6
   ypos: 0
   TagName: AlkalineEarthMetals
+  ElementsList: 040000000c00000014000000260000003800000058000000
+  FilteredXPos:
+  - 0
+  - 1
+  - 2
+  - 0
+  - 1
+  - 2
+  FilteredYPos:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1

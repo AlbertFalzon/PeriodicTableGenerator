@@ -13,8 +13,32 @@ MonoBehaviour:
   m_Name: ReactiveNonMetals
   m_EditorClassIdentifier: 
   CategoryName: Reactive Non-Metals
-  ElementsList: 01000000060000000700000008000000090000000f0000001000000011000000220000002300000035000000
   BlockColour: '#3e6418'
   xpos: 8
   ypos: 1.5
   TagName: ReactiveNonMetals
+  ElementsList: 01000000060000000700000008000000090000000f0000001000000011000000220000002300000035000000
+  FilteredXPos:
+  - 0
+  - 1
+  - 2
+  - 0
+  - 1
+  - 2
+  - 0
+  - 1
+  - 2
+  - 0
+  - 1
+  FilteredYPos:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 2
+  - 2
+  - 2
+  - 3
+  - 3

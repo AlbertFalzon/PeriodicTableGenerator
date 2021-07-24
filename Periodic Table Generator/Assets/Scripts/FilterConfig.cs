@@ -7,11 +7,13 @@ using UnityEngine;
 public class FilterConfig : ScriptableObject
 {
     [SerializeField] string CategoryName;
-    [SerializeField] int[] ElementsList;
     [SerializeField] string BlockColour;
     [SerializeField] float xpos;
     [SerializeField] float ypos;
     [SerializeField] string TagName;
+    [SerializeField] int[] ElementsList;
+    [SerializeField] float[] FilteredXPos;
+    [SerializeField] float[] FilteredYPos;
 
     public int[] ReturnElementsList()
     {
@@ -48,5 +50,15 @@ public class FilterConfig : ScriptableObject
     public string ReturnTagName()
     {
         return TagName;
+    }
+
+    public float[] ReturnFilteredXPos()
+    {
+        return FilteredXPos;
+    }
+
+    public float[] ReturnFilteredYPos()
+    {
+        return FilteredYPos;
     }
 }

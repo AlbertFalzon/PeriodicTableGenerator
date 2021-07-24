@@ -13,8 +13,22 @@ MonoBehaviour:
   m_Name: AlkaliMetals
   m_EditorClassIdentifier: 
   CategoryName: Alkali Metals
-  ElementsList: 030000000b00000013000000250000003700000057000000
   BlockColour: '#6c3b01'
   xpos: 4
   ypos: 0
   TagName: AlkaliMetals
+  ElementsList: 030000000b00000013000000250000003700000057000000
+  FilteredXPos:
+  - 0
+  - 1
+  - 2
+  - 0
+  - 1
+  - 2
+  FilteredYPos:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1

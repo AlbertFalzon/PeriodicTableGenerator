@@ -24,23 +24,34 @@ public class ButtonReader : MonoBehaviour
         Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 1000f);
         if (Input.GetMouseButtonDown(0) && hit.transform != null)
         {   
-            if(hit.transform.parent.parent == FilterContainer)
+            switch(hit.transform.tag)
             {
-                RayCastHit(hit);
-            } 
+                case "AlkaliMetals":
+                case "AlkalineEarthMetals":
+                case "Metalloids":
+                case "NobleGases":
+                case "PostTransitionMetals":
+                case "ReactiveNonMetals":
+                    RayCastHit(hit);
+                    break;
+                
+                default:
+                    print("Clicked on an invalid element");
+                    break;
+            }
         }
     }
 
-    public void RayCastHit(RaycastHit ClickedButton)
+    public void RayCastHit(RaycastHit ClickedObject)
     {        
         for(int i = 0; i < FilterContainer.GetChild(0).childCount; i++)
         {
-            if (FilterContainer.GetChild(0).GetChild(i).CompareTag(ClickedButton.transform.tag))
+            if (FilterContainer.GetChild(0).GetChild(i).CompareTag(ClickedObject.transform.tag))
             {
                 SelectedFilter = FilterContainer.GetComponent<FilterButtonSpawner>().ReturnAllFilters()[i];
                 break;
             }
         }
-        StartCoroutine(FindObjectOfType<ElementsJsonDecoder>().SpawnElement(SelectedFilter.ReturnElementsList()));
+        StartCoroutine(FindObjectOfType<ElementSpawner>().SpawnElementsFiltered(SelectedFilter.ReturnElementsList(), SelectedFilter));
     }
 }
