@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: NobleGases
   m_EditorClassIdentifier: 
   CategoryName: Noble Gases
-  BlockColour: '#3a2151'
-  xpos: 6
-  ypos: 1.5
+  BlockColour: '#3243AD'
+  xpos: 2
+  ypos: 1
   TagName: NobleGases
   ElementsList: 020000000a00000012000000240000003600000056000000
   FilteredXPos:

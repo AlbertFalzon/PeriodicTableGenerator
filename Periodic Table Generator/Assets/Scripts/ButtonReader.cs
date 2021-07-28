@@ -7,12 +7,15 @@ public class ButtonReader : MonoBehaviour
 
     public RaycastHit hit;
     public Transform FilterContainer;
+    public ElementSpawner ElementsContainer;
     public List<Transform> FilterChildren;
     public FilterConfig SelectedFilter;
+    public string CurrentFilter = "Untagged";
 
     public void InitializeReader()
     {
         FilterContainer = FindObjectOfType<FilterButtonSpawner>().transform;
+        ElementsContainer = FindObjectOfType<ElementSpawner>().GetComponent<ElementSpawner>();
         for(int i = 0; i < FilterContainer.GetChild(0).childCount; i++)
         {
             FilterChildren.Add(FilterContainer.GetChild(0).GetChild(i));  
@@ -32,19 +35,32 @@ public class ButtonReader : MonoBehaviour
                 case "NobleGases":
                 case "PostTransitionMetals":
                 case "ReactiveNonMetals":
-                    RayCastHit(hit);
+                    if (!(hit.transform.CompareTag(CurrentFilter))){
+                        CurrentFilter = hit.transform.tag;
+                        StartCoroutine(CallGroupedView(hit));
+                    }
                     break;
-                
+                case "SwitchView":
+                    if (CurrentFilter != "Untagged")
+                    {
+                        StartCoroutine(CallFullView());
+                    }
+                    break;
+                case "Untagged":
+                    if (hit.transform.parent.CompareTag("GroupContainer"))
+                    {
+                        hit.transform.parent.GetComponent<GroupedViewSpawner>().ShowDetails(hit.transform);
+                    }
+                    break;
                 default:
-                    print("Clicked on an invalid element");
                     break;
             }
         }
     }
 
-    public void RayCastHit(RaycastHit ClickedObject)
+    public IEnumerator CallGroupedView(RaycastHit ClickedObject)
     {        
-        for(int i = 0; i < FilterContainer.GetChild(0).childCount; i++)
+        for(int i = 0; i < FilterContainer.GetChild(0).childCount - 1; i++)
         {
             if (FilterContainer.GetChild(0).GetChild(i).CompareTag(ClickedObject.transform.tag))
             {
@@ -52,6 +68,12 @@ public class ButtonReader : MonoBehaviour
                 break;
             }
         }
-        StartCoroutine(FindObjectOfType<ElementSpawner>().SpawnElementsFiltered(SelectedFilter.ReturnElementsList(), SelectedFilter));
+        yield return StartCoroutine(ElementsContainer.SpawnContainerGrouped(SelectedFilter));
+    }
+
+    public IEnumerator CallFullView()
+    {
+        CurrentFilter = "Untagged";
+        yield return StartCoroutine(ElementsContainer.SpawnContainerFull());
     }
 }

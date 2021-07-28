@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803407992ffaef74ea9047bc5256b1a8, type: 3}
   m_Name: ReactiveNonMetals
   m_EditorClassIdentifier: 
-  CategoryName: Reactive Non-Metals
-  BlockColour: '#3e6418'
-  xpos: 8
-  ypos: 1.5
+  CategoryName: Reactive    Non-Metals
+  BlockColour: '#419100'
+  xpos: 3.75
+  ypos: 1
   TagName: ReactiveNonMetals
   ElementsList: 01000000060000000700000008000000090000000f0000001000000011000000220000002300000035000000
   FilteredXPos:
   - 0
   - 1
   - 2
+  - 3
   - 0
   - 1
   - 2
+  - 3
   - 0
   - 1
   - 2
-  - 0
-  - 1
   FilteredYPos:
   - 0
   - 0
   - 0
+  - 0
+  - 1
   - 1
   - 1
   - 1
   - 2
   - 2
   - 2
-  - 3
-  - 3

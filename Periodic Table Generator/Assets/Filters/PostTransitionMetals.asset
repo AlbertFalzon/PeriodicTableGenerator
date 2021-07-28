@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CategoryName: Post-Transition metals
   BlockColour: '#003666'
-  xpos: 8
+  xpos: 3.75
   ypos: 0
   TagName: PostTransitionMetals
   ElementsList: 0d0000001f000000310000003200000051000000520000005300000054000000
@@ -22,17 +22,17 @@ MonoBehaviour:
   - 0
   - 1
   - 2
+  - 3
   - 0
   - 1
   - 2
-  - 0
-  - 1
+  - 3
   FilteredYPos:
   - 0
   - 0
   - 0
+  - 0
   - 1
   - 1
   - 1
-  - 2
-  - 2
+  - 1

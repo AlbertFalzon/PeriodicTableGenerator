@@ -1,7 +1,6 @@
 using System.Collections;
-using TMPro;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ElementSpawner : MonoBehaviour
 {
@@ -10,143 +9,92 @@ public class ElementSpawner : MonoBehaviour
     
     // Create objects from object classes
     public ElementsJsonDetails ElementsDetail = new ElementsJsonDetails();
-    
-    // List of categories that can be spawned
-    [SerializeField] string[] SpawnableCategories;
 
-    // Object prefab to use on the periodic table
-    [SerializeField] GameObject ElementPrefab;
-    [SerializeField] GameObject ElementsContainer;
+    // Containers to spawn
+    [SerializeField] GameObject FullViewPrefab;
+    [SerializeField] GameObject GroupedViewPrefab;
+    [SerializeField] GameObject FilterContainerPrefab;
 
-    // Frequently Referred Objects
+    // Frequently Referred Objects/Variables
     Transform CurrentContainer;
+    Vector3 FullContainerPos = new Vector3(-3f, 1.75f, 0f);
+    float FullViewMultiplier = 7f;
+    Vector3 GroupedContainerPos = new Vector3(0f, -3f, 0f);
+    float GroupedContainerMultiplier = 10f;
+    float ShrinkMultiplier = 0.001f;
 
-    public void Start()
+    public IEnumerator Start()
     {
-        GameObject NewContainer = Instantiate(ElementsContainer, transform.position, transform.rotation);
-        NewContainer.transform.parent = transform.GetChild(0);
-        // Initialise CurrentContainer
-        CurrentContainer = transform.GetChild(0).GetChild(0);
-
         // Populate object with json file contents
         ElementsDetail = JsonUtility.FromJson<ElementsJsonDetails>(PeriodicTableJson.text);
 
-        print("Calling Function");
-        StartCoroutine(SpawnElementsAll(SpawnableCategories));
-        print("Function Called");
+        yield return StartCoroutine(SpawnContainerFull());
+    }
+
+    public IEnumerator SpawnContainerFull()
+    {
+        yield return StartCoroutine(DestroyContainer(FullViewPrefab, FullContainerPos));
+        yield return StartCoroutine(CurrentContainer.GetComponent<FullViewSpawner>().SpawnElementsAll(ElementsDetail));
+        yield return StartCoroutine(ScaleContainer(FullViewMultiplier));
+        GameObject FilterContainer = Instantiate(FilterContainerPrefab, transform.position, transform.rotation);
+        FilterContainer.transform.parent = CurrentContainer;
+    }
+
+    public IEnumerator SpawnContainerGrouped(FilterConfig ChosenFilter)
+    {
+        yield return StartCoroutine(DestroyContainer(GroupedViewPrefab, GroupedContainerPos));
+        Destroy(FindObjectOfType<FilterButtonSpawner>().gameObject);
+        List<Details> ElementsList = new List<Details>();
+
+        // Select Elements to spawn
+        foreach (Details element in ElementsDetail.Elements) 
+        {
+            for (int i = 0; i < ChosenFilter.ReturnElementsList().Length; i++)
+            {
+                if(element.Number == ChosenFilter.ReturnElementsList()[i])
+                {
+                    ElementsList.Add(element);
+                }
+            }
+        }
+
+        Vector3[] PosList = new Vector3[ChosenFilter.ReturnElementsList().Length];
+
+        for(int i = 0; i < PosList.Length; i++)
+        {
+            PosList[i] = new Vector3(ChosenFilter.ReturnFilteredXPos()[i] - 1.5f, ChosenFilter.ReturnFilteredYPos()[i] + 3f, -0.25f);
+        }
+
+        yield return StartCoroutine(CurrentContainer.GetComponent<GroupedViewSpawner>().SpawnElementsFiltered(ElementsList, PosList));
+        yield return StartCoroutine(ScaleContainer(GroupedContainerMultiplier));
     }
     
-    public IEnumerator SpawnElementsAll(string[] Categories)
+    public IEnumerator ScaleContainer(float TargetMultiplier)
     {
-        print("Second Function");
-        yield return StartCoroutine(EnlargeShrinkContainer(true));
-        print("Second Function Done");
-        foreach(Details element in ElementsDetail.Elements)
-        {
-            GameObject NextElement = Instantiate(ElementPrefab, new Vector3(element.Xpos - 1.5f, (-element.Ypos) + 3f, -0.25f), transform.rotation);
-            NextElement.transform.SetParent(CurrentContainer);
-            print(element.Category);
-            for(int i = 0; i < Categories.Length; i++)
-            {
-                if(element.Category == Categories[i])
-                {
-                    // Assign Tag to element
-                    NextElement.tag = element.Category;
-
-                    // Get TMP child of spawned element
-                    GameObject TextChild = NextElement.transform.GetChild(0).gameObject;
-
-                    // Set text in a string and assign it
-                    string NewText = "<align=\"right\"><size=18>" + element.Number + "</size></align>\n<size=40>" + element.Symbol + "</size>\n<size=14>" + element.Name + "\n" + element.Atomic_Mass + "</size>";
-                    TextChild.GetComponent<TextMeshProUGUI>().text = NewText;
-                    Color NewColor;
-
-                    // Use Cpk_Hex to colour the text
-                    if (ColorUtility.TryParseHtmlString("#" + element.Cpk_Hex[0], out NewColor))
-                    {
-                      TextChild.GetComponent<TextMeshProUGUI>().color = NewColor;
-                    }
-
-                    // Use Cpk_Hex to colour the material
-                    if (ColorUtility.TryParseHtmlString("#" + element.Cpk_Hex[1], out NewColor))
-                    {
-                      NextElement.GetComponent<MeshRenderer>().material.SetColor("_Color", NewColor);
-                    }
-                }
-            }
-        }
-        yield return StartCoroutine(EnlargeShrinkContainer(false));
-    }
-
-    public IEnumerator SpawnElementsFiltered(int[] ElementIndexList, FilterConfig ChosenFilter)
-    {
-        yield return StartCoroutine(EnlargeShrinkContainer(true));
-        int count = 0;
-        foreach(Details element in ElementsDetail.Elements)
-        {
-            if(element.Category == ChosenFilter.ReturnTagName())
-            {
-                GameObject NextElement = Instantiate(ElementPrefab, new Vector3(ChosenFilter.ReturnFilteredXPos()[count] - 1.5f, -(ChosenFilter.ReturnFilteredYPos()[count]) + 3f, -0.25f), transform.rotation);
-                NextElement.transform.SetParent(CurrentContainer);
-                NextElement.tag = element.Category;
-
-                // Get TMP child of spawned element
-                GameObject TextChild = NextElement.transform.GetChild(0).gameObject;
-
-                // Set text in a string and assign it
-                string NewText = "<align=\"right\"><size=18>" + element.Number + "</size></align>\n<size=40>" + element.Symbol + "</size>\n<size=14>" + element.Name + "\n" + element.Atomic_Mass + "</size>";
-                TextChild.GetComponent<TextMeshProUGUI>().text = NewText;
-                Color NewColor;
-
-                // Use Cpk_Hex to colour the text
-                if (ColorUtility.TryParseHtmlString("#" + element.Cpk_Hex[0], out NewColor))
-                {
-                  TextChild.GetComponent<TextMeshProUGUI>().color = NewColor;
-                }
-
-                // Use Cpk_Hex to colour the material
-                if (ColorUtility.TryParseHtmlString("#" + element.Cpk_Hex[1], out NewColor))
-                {
-                  NextElement.GetComponent<MeshRenderer>().material.SetColor("_Color", NewColor);
-                }
-
-                count++;
-            }
-        }
-        yield return StartCoroutine(EnlargeShrinkContainer(false));
-    }
-
-    public IEnumerator EnlargeShrinkContainer(bool shrink)
-    {
-        
+        float Multiplier;
+        float StartMultiplier = 1f;
         float counter = 0;
-        if (shrink)
-        {
-            Vector3 StartingScale = CurrentContainer.localScale;
-            Vector3 EndScale = new Vector3(0.0001f, 0.0001f, 0.0001f);
-            while (counter < 0.25f)
-            {
-                counter += Time.deltaTime;
-                CurrentContainer.localScale = Vector3.Lerp(StartingScale, EndScale, counter / 0.25f);
-                yield return null;
-            }
+        Vector3 StartingScale = CurrentContainer.localScale;
 
-            Destroy(CurrentContainer.gameObject);
-            GameObject NewContainer = Instantiate(ElementsContainer, transform.position, transform.rotation);
-            NewContainer.transform.parent = transform.GetChild(0);
-            CurrentContainer = NewContainer.transform;
-        } else
+        while (counter < 0.25f)
         {
-            CurrentContainer.localScale = new Vector3(0.01f, 0.01f, 0.01f);
-            Vector3 StartingScale = CurrentContainer.localScale;
-            Vector3 EndScale = new Vector3(1f , 1f, 1f);
-            while (counter < 0.25f)
-            {
-                counter += Time.deltaTime;
-                CurrentContainer.localScale = Vector3.Lerp(StartingScale, EndScale, counter / 0.25f);
-                yield return null;
-            }
+            Multiplier = Mathf.Lerp(StartMultiplier, TargetMultiplier, counter / 0.25f);
+            CurrentContainer.localScale = StartingScale * Multiplier;
+            counter += Time.deltaTime;
+            yield return null;
         }
-        
+        yield return new WaitForFixedUpdate();
+    }
+
+    public IEnumerator DestroyContainer(GameObject ContainerToSpawn, Vector3 NewPos)
+    {
+        if (CurrentContainer != null)
+        {
+            yield return StartCoroutine(ScaleContainer(ShrinkMultiplier));
+            Destroy(CurrentContainer.gameObject);
+        }
+        GameObject NewContainer = Instantiate(ContainerToSpawn, NewPos, transform.rotation);
+        NewContainer.transform.parent = transform.GetChild(0);
+        CurrentContainer = NewContainer.transform;
     }
 }

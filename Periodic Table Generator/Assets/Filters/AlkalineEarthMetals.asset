@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803407992ffaef74ea9047bc5256b1a8, type: 3}
   m_Name: AlkalineEarthMetals
   m_EditorClassIdentifier: 
-  CategoryName: Alkaline Earth Metals
-  BlockColour: '#846011'
-  xpos: 6
+  CategoryName: Alkaline     Earth Metals
+  BlockColour: '#B8A232'
+  xpos: 2
   ypos: 0
   TagName: AlkalineEarthMetals
   ElementsList: 040000000c00000014000000260000003800000058000000
