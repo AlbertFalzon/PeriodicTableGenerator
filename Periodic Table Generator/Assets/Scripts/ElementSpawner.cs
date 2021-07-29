@@ -18,7 +18,7 @@ public class ElementSpawner : MonoBehaviour
     // Frequently Referred Objects/Variables
     Transform CurrentContainer;
     Vector3 FullContainerPos = new Vector3(-3f, 1.75f, 0f);
-    float FullViewMultiplier = 7.3f;
+    float FullViewMultiplier = 7f;
     Vector3 GroupedContainerPos = new Vector3(0f, -3f, 0f);
     float GroupedContainerMultiplier = 10f;
     float ShrinkMultiplier = 0.001f;

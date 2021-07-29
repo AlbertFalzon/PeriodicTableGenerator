@@ -11,6 +11,7 @@ HOW TO USE:
 			'GroupContainer'
 2. Place a 'Spawner' and 'Board' prefab in your scene. (Found in the Prefabs folder)
 3. Attach a 'ButtonReader' script to the main camera. (Found in the Scripts folder)
+4. Import TMP essentials (This is also prompted if you run the program without having imported them)
 ____________________________________________________________________________________________________________________
 HOW TO ADD/REMOVE USEABLE CATEGORIES:
 
