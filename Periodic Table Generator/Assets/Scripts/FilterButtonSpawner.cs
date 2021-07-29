@@ -20,7 +20,8 @@ public class FilterButtonSpawner : MonoBehaviour
             yield return StartCoroutine(SpawnFilterBlock(AllFilters[i]));
         }
 
-        yield return StartCoroutine(SpawnLegend());
+        GameObject Legend = Instantiate(LegendPrefab, new Vector3(8.3f, 7.3f, 0f), transform.rotation);
+        Legend.transform.SetParent(CanvasChild);
 
         FindObjectOfType<ButtonReader>().InitializeReader();
     }
@@ -33,14 +34,6 @@ public class FilterButtonSpawner : MonoBehaviour
         NextFilterBlock.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = FilterToSpawn.ReturnCategoryName();
         NextFilterBlock.tag = FilterToSpawn.ReturnTagName();
         NextFilterBlock.name = FilterToSpawn.ReturnTagName();
-        yield return new WaitForFixedUpdate();
-    }
-
-    public IEnumerator SpawnLegend()
-    {
-        GameObject Legend = Instantiate(LegendPrefab, new Vector3(8.3f, 7.3f, 0f), transform.rotation);
-        Legend.transform.SetParent(CanvasChild);
-        
         yield return new WaitForFixedUpdate();
     }
 

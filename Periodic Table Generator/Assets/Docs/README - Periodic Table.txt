@@ -30,3 +30,7 @@ HOW TO ADD/REMOVE USEABLE CATEGORIES:
 4. Under the 'FullViewSpawner' script component find the 'Categories' variable and change its size to the amount of desired categories.
 5. Type the names of the desired categories.
 REMINDER: If adding a category, type it as it is in the json file. (Found in Resources > Json > PeriodicTableJSON) THIS MEANS THAT THE TAG NAME (2e) SHOULD MATCH WHAT IS WRITTEN HERE
+
+6. Select the 'FilterContainer' prefab from the Prefabs folder.
+7. From the 'FilterButtonSpawner' component, set the size of the AllFilters list to the same amount of categories you want to be accessible.
+8. In no particular order, make sure that all the desired FilterConfig objects are assigned to 'AllFilters'.

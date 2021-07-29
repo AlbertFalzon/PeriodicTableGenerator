@@ -42,6 +42,7 @@ public class GroupedViewSpawner : MonoBehaviour
         yield return new WaitForFixedUpdate();
     }
 
+    // Function that receives the object clicked from the ButtonReader script as a parameter and compares it to its children to then pull the correct 'summary' and display it
     public void ShowDetails(Transform hit)
     {
         for(int i = 2; i < transform.childCount; i++)
