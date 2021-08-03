@@ -91,6 +91,7 @@ public class ElementSpawner : MonoBehaviour
             counter += Time.deltaTime;
             yield return null;
         }
+        CurrentContainer.localScale = StartingScale * TargetMultiplier;
         yield return new WaitForFixedUpdate();
     }
 
